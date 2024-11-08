@@ -62,27 +62,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Tailwind is weird with sibling styling the sibling must be placed after to use the peer-* thing: https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Had difficulty using tailwind to do common css things like sibling state or child state. Ex. was trying to make the nav links arrow icon be tied to the checked or unchecked state of the checkbox input that expands or collapses the sub menus.
 
 ### Continued development
 
