@@ -18,8 +18,12 @@
     </head>
     <body class="bg-slate-50 font-epilogue relative">
         <header class="px-4 py-6">
-            <nav class="flex justify-between">
-                <img src="../images/logo.svg" />
+            <nav class="flex justify-between w-full px-4">
+                <img
+                    src="../images/logo.svg"
+                    alt="Snap brand logo"
+                    class="self-center"
+                />
                 <label for="mobile-menu" class="md:hidden"
                     ><img src="../images/icon-menu.svg"
                 /></label>
@@ -29,159 +33,218 @@
                     for="mobile-menu"
                     class="hidden peer-checked:block absolute bg-black/30 w-full h-full top-0 left-0 z-10"
                 ></label>
-                <ul
-                    class="hidden peer-checked:flex flex-col justify-start fixed gap-3 p-5 w-8/12 h-full z-20 bg-white right-0 top-0 md:flex md:flex-row md:bg-transparent md:w-auto md:h-auto md:right-auto md:top-auto md:relative"
+                <div
+                    class="hidden peer-checked:flex flex-col justify-start fixed gap-3 p-5 w-8/12 h-full z-20 bg-white right-0 top-0 md:flex md:flex-row md:items-center md:p-0 md:bg-transparent md:w-[inherit] md:h-auto md:right-auto md:top-auto md:relative md:justify-between md:ml-6 lg:ml-16"
                 >
-                    <li class="self-end md:hidden">
-                        <label id="mobile-menu-close" for="mobile-menu">
-                            <img
-                                src="../images/icon-close-menu.svg"
-                                alt="Hamburger menu icon"
-                            />
-                        </label>
-                    </li>
-                    <li>
-                        <input
-                            id="features-list"
-                            type="checkbox"
-                            class="hidden peer"
-                        />
-                        <label
-                            for="features-list"
-                            class="flex items-center gap-3 cursor-pointer text-gray-500 font-medium peer-[:not(:checked)]:[&_.arrow-down]:block peer-checked:[&_.arrow-up]:block"
-                        >
-                            Features
-                            <img
-                                src="../images/icon-arrow-down.svg"
-                                class="hidden arrow-down"
-                                alt="Arrow pointing down icon"
-                            />
-                            <img
-                                src="../images/icon-arrow-up.svg"
-                                class="hidden arrow-up"
-                                alt="Arrow pointing up icon"
-                            />
-                        </label>
-                        <ul
-                            class="hidden peer-checked:flex flex-col text-gray-500 font-medium mt-4 ml-4 mb-2 gap-4"
-                        >
-                            <li>
-                                <a href="#" class="flex gap-4 items-start"
-                                    ><div
-                                        class="w-5 flex items-end mt-[0.1rem] justify-center"
-                                    >
-                                        <img
-                                            src="../images/icon-todo.svg"
-                                            alt="List icon"
-                                        />
-                                    </div>
-                                    <span class="leading-normal"
-                                        >Todo List</span
-                                    ></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex gap-4 items-start"
-                                    ><div
-                                        class="w-5 flex items-end mt-[0.1rem] justify-center"
-                                    >
-                                        <img
-                                            src="../images/icon-calendar.svg"
-                                            alt="Calendar icon"
-                                        />
-                                    </div>
-                                    <span class="leading-normal"
-                                        >Calendar</span
-                                    ></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex gap-4 items-start"
-                                    ><div
-                                        class="w-5 flex items-end mt-[0.1rem] justify-center"
-                                    >
-                                        <img
-                                            src="../images/icon-reminders.svg"
-                                            alt="Bell icon"
-                                        />
-                                    </div>
-                                    <span class="leading-normal"
-                                        >Reminders</span
-                                    ></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex gap-4 items-start"
-                                    ><div
-                                        class="w-5 flex items-end mt-[0.1rem] justify-center"
-                                    >
-                                        <img
-                                            src="../images/icon-planning.svg"
-                                            alt="Clock icon"
-                                        />
-                                    </div>
-                                    <span class="leading-normal"
-                                        >Planning</span
-                                    ></a
-                                >
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <input
-                            id="company-list"
-                            type="checkbox"
-                            class="hidden peer"
-                        />
-                        <label
-                            for="company-list"
-                            class="flex items-center gap-3 cursor-pointer text-gray-500 font-medium peer-[:not(:checked)]:[&_.arrow-down]:block peer-checked:[&_.arrow-up]:block"
-                        >
-                            Company
-                            <img
-                                src="../images/icon-arrow-down.svg"
-                                class="hidden arrow-down"
-                            />
-                            <img
-                                src="../images/icon-arrow-up.svg"
-                                class="hidden arrow-up"
-                            />
-                        </label>
-                        <ul
-                            class="hidden peer-checked:flex flex-col text-gray-500 font-medium mt-4 ml-4 mb-2 gap-4"
-                        >
-                            <li>
-                                <a href="#" class="flex gap-4 items-start">
-                                    <span class="leading-normal"
-                                        >History</span
-                                    ></a
-                                >
-                            </li>
-                            <li><button>Our Team</button></li>
-                            <li><button>Blog</button></li>
-                        </ul>
-                    </li>
-                    <li class="text-gray-500 font-medium">
-                        <a href="#">Careers</a>
-                    </li>
-                    <li class="text-gray-500 font-medium">
-                        <a href="#">About</a>
-                    </li>
-                    <li
-                        class="flex justify-center text-gray-500 font-medium p-1 mt-4"
+                    <ul
+                        class="flex flex-col justify-start gap-3 md:flex-row md:gap-6 lg:gap-10"
                     >
-                        <a href="#">Login</a>
-                    </li>
-                    <li
-                        class="flex justify-center text-gray-500 font-medium border border-gray-500 rounded-xl p-2"
+                        <li class="self-end md:hidden">
+                            <label id="mobile-menu-close" for="mobile-menu">
+                                <img
+                                    src="../images/icon-close-menu.svg"
+                                    alt="Hamburger menu icon"
+                                />
+                            </label>
+                        </li>
+                        <li class="md:relative">
+                            <input
+                                id="features-list"
+                                type="checkbox"
+                                class="hidden peer"
+                            />
+                            <label
+                                for="features-list"
+                                class="flex items-center gap-3 cursor-pointer text-gray-500 font-medium peer-[:not(:checked)]:[&_.arrow-down]:block peer-checked:[&_.arrow-up]:block hover:text-black hover:stroke-black stroke-[#686868]"
+                            >
+                                Features
+                                <svg
+                                    width="10"
+                                    height="6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="hidden arrow-down"
+                                >
+                                    <path
+                                        stroke-width="1.5"
+                                        fill="none"
+                                        d="m1 1 4 4 4-4"
+                                        class="stroke-inherit"
+                                    />
+                                    <title>Arrow pointing down icon</title>
+                                </svg>
+                                <svg
+                                    width="10"
+                                    height="6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="hidden arrow-up"
+                                >
+                                    <path
+                                        stroke-width="1.5"
+                                        fill="none"
+                                        d="m1 5 4-4 4 4"
+                                        class="stroke-inherit"
+                                    />
+                                    <title>Arrow pointing up icon</title>
+                                </svg>
+                            </label>
+                            <ul
+                                class="hidden peer-checked:flex flex-col text-gray-500 font-medium mt-4 ml-4 mb-2 gap-4 md:absolute md:ml-0 md:mb-0 md:gap-3 md:bg-white md:rounded-xl md:shadow-lg md:p-5 md:-translate-x-[40%]"
+                            >
+                                <li class="hover:text-black">
+                                    <a href="#" class="flex gap-4 items-start"
+                                        ><div
+                                            class="w-5 flex items-end mt-[0.1rem] justify-center"
+                                        >
+                                            <img
+                                                src="../images/icon-todo.svg"
+                                                alt="List icon"
+                                            />
+                                        </div>
+                                        <span class="leading-normal"
+                                            >Todo List</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="hover:text-black">
+                                    <a href="#" class="flex gap-4 items-start"
+                                        ><div
+                                            class="w-5 flex items-end mt-[0.1rem] justify-center"
+                                        >
+                                            <img
+                                                src="../images/icon-calendar.svg"
+                                                alt="Calendar icon"
+                                            />
+                                        </div>
+                                        <span class="leading-normal"
+                                            >Calendar</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="hover:text-black">
+                                    <a href="#" class="flex gap-4 items-start"
+                                        ><div
+                                            class="w-5 flex items-end mt-[0.1rem] justify-center"
+                                        >
+                                            <img
+                                                src="../images/icon-reminders.svg"
+                                                alt="Bell icon"
+                                            />
+                                        </div>
+                                        <span class="leading-normal"
+                                            >Reminders</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="hover:text-black">
+                                    <a href="#" class="flex gap-4 items-start"
+                                        ><div
+                                            class="w-5 flex items-end mt-[0.1rem] justify-center"
+                                        >
+                                            <img
+                                                src="../images/icon-planning.svg"
+                                                alt="Clock icon"
+                                            />
+                                        </div>
+                                        <span class="leading-normal"
+                                            >Planning</span
+                                        ></a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="md:relative">
+                            <input
+                                id="company-list"
+                                type="checkbox"
+                                class="hidden peer"
+                            />
+                            <label
+                                for="company-list"
+                                class="flex items-center gap-3 cursor-pointer text-gray-500 font-medium peer-[:not(:checked)]:[&_.arrow-down]:block peer-checked:[&_.arrow-up]:block hover:text-black hover:stroke-black stroke-[#686868]"
+                            >
+                                Company
+                                <svg
+                                    width="10"
+                                    height="6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="hidden arrow-down"
+                                >
+                                    <path
+                                        stroke-width="1.5"
+                                        fill="none"
+                                        d="m1 1 4 4 4-4"
+                                        class="stroke-inherit"
+                                    />
+                                    <title>Arrow pointing down icon</title>
+                                </svg>
+                                <svg
+                                    width="10"
+                                    height="6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="hidden arrow-up"
+                                >
+                                    <path
+                                        stroke-width="1.5"
+                                        fill="none"
+                                        d="m1 5 4-4 4 4"
+                                        class="stroke-inherit"
+                                    />
+                                    <title>Arrow pointing up icon</title>
+                                </svg>
+                            </label>
+                            <ul
+                                class="hidden peer-checked:flex flex-col text-gray-500 font-medium mt-4 ml-4 mb-2 gap-4 md:absolute md:ml-0 md:mb-0 md:bg-white md:rounded-xl md:shadow-lg md:p-5 md:-translate-x-[10%]"
+                            >
+                                <li class="hover:text-black">
+                                    <a href="#" class="flex gap-4 items-start">
+                                        <span class="leading-normal"
+                                            >History</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="hover:text-black">
+                                    <a href="#" class="flex gap-4 items-start">
+                                        <span class="leading-normal text-nowrap"
+                                            >Our Team</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="hover:text-black">
+                                    <a href="#" class="flex gap-4 items-start">
+                                        <span class="leading-normal"
+                                            >Blog</span
+                                        ></a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="text-gray-500 font-medium hover:text-black">
+                            <a href="#">Careers</a>
+                        </li>
+                        <li class="text-gray-500 font-medium hover:text-black">
+                            <a href="#">About</a>
+                        </li>
+                        <!--Need to make the hover for the dropdown arrows black too, align the make remote work section witht eh hero picture -->
+                    </ul>
+                    <ul
+                        class="flex flex-col justify-start gap-3 md:flex-row md:items-center md:gap-6 lg:gap-10"
                     >
-                        <a href="#">Register</a>
-                    </li>
-                </ul>
+                        <li
+                            class="flex justify-center text-gray-500 font-medium p-1 mt-4 md:mt-0 hover:text-black"
+                        >
+                            <a href="#">Login</a>
+                        </li>
+                        <li
+                            class="flex justify-center text-gray-500 font-medium border border-gray-500 rounded-xl p-2 hover:text-black hover:border-black"
+                        >
+                            <a href="#" class="px-4">Register</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <section
-            class="flex flex-col gap-10 items-center md:flex-row-reverse md:justify-center md:p-6 lg:p-12 md:gap-20 lg:gap-32"
+            class="flex flex-col gap-10 items-center md:flex-row-reverse md:justify-center md:p-6 lg:p-12 lg:pb-0 md:gap-20 lg:gap-32"
         >
             <picture>
                 <source
@@ -211,7 +274,7 @@
                     processes, create team rituals, and watch productivity soar.
                 </p>
                 <button
-                    class="bg-black text-white rounded-2xl px-5 py-3 font-semibold w-auto md:self-start"
+                    class="bg-black text-white border border-black rounded-2xl px-5 py-3 font-semibold w-auto md:self-start hover:border hover:text-black hover:bg-white box-border md:text-lg md:px-7"
                 >
                     Learn more
                 </button>
@@ -219,11 +282,29 @@
                     class="flex gap-7 px-4 mt-6 md:px-0 md:w-[100%] md:justify-between"
                 >
                     <li>
-                        <img src="../images/client-databiz.svg" />
+                        <img
+                            src="../images/client-databiz.svg"
+                            alt="Databiz brand logo"
+                        />
                     </li>
-                    <li><img src="../images/client-audiophile.svg" /></li>
-                    <li><img src="../images/client-meet.svg" /></li>
-                    <li><img src="../images/client-maker.svg" /></li>
+                    <li>
+                        <img
+                            src="../images/client-audiophile.svg"
+                            alt="Audiophile brand logo"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="../images/client-meet.svg"
+                            alt="Meet brand logo"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="../images/client-maker.svg"
+                            alt="Maker brand logo"
+                        />
+                    </li>
                 </ul>
             </div>
         </section>
